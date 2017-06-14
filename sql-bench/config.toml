@@ -1,0 +1,33 @@
+
+
+# Workload
+[workload]
+numItem=10000
+minLenVarchar=5
+
+# Table structure
+[table]
+tableName= "test"
+
+# int(n), varchar(n), datetime
+fieldType = ["int(11)","varchar(32)","datetime"]
+fieldName   = ["`ID`", "`USERNAME`","`DTIME`"]
+
+# the column name which uses an index
+indexName = ["`USERNAME`","`DTIME`"]
+
+# the column name of primary key
+primaryKey = "`ID`"
+engine= "InnoDB"
+charset="latin1"
+
+
+
+
+# DB config
+[database]
+host = "127.0.0.1"
+user = "root"
+password = ""
+port = "3306"
+dbName="test"
